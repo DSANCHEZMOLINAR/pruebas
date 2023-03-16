@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e291792b-84de-403b-9af3-37fbb35cfd4b" activeEnvironment="Default" name="VNTA_MON_APP" resourceRoot="" soapui-version="5.1.3" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="cc297a4d-7489-4c38-8668-737338f39921" wsaVersion="NONE" name="FachadaVMonederos" type="wsdl" bindingName="{http://www.liverpool.com/FachadaVMonederos}FachadaVMonederos" soapVersion="1_1" anonymous="optional" definition="file:/C:/Users/dsanchezm/Downloads/PRO_IIB10_VTA_MON_APP_12122019V2/VTA_MON_APP/FachadaVMonederos.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\dsanchezm\Downloads\PRO_IIB10_VTA_MON_APP_12122019V2\VTA_MON_APP\FachadaVMonederos.wsdl"><con:part><con:url>file:\C:\Users\dsanchezm\Downloads\PRO_IIB10_VTA_MON_APP_12122019V2\VTA_MON_APP\FachadaVMonederos.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="Fachada_VI" targetNamespace="http://www.liverpool.com/FachadaVMonederos" xmlns:liverpool="http://www.liverpool.com/FachadaVMonederos" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <generatedXSD location="FachadaVMonederos_InlineSchema1.xsd"/>
+        <binding hasEncoding="false" imported="true" name="FachadaVMonederos" originalBindingStyle="document"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.liverpool.com/FachadaVMonederos" xmlns:env="http://www.liverpool.com/fachada_FachadaVMonederos" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://www.liverpool.com/fachada_FachadaVMonederos" schemaLocation="FachadaVMonederos.xsd"/>
+      <xsd:include schemaLocation="FachadaVMonederos_InlineSchema1.xsd"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultaMonederosRequestWS">
+    <wsdl:part element="liverpool:ConsultaMonederosRequestWS" name="ConsultaMonederosRequestWS"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaMonederosWSResponse">
+    <wsdl:part element="liverpool:ConsultaMonederosWSResponse" name="ConsultaMonederosWSResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaPorFolioRequestWS">
+    <wsdl:part element="liverpool:ConsultaPorFolioRequestWS" name="ConsultaPorFolioRequestWS"/>
+  </wsdl:message>
+  <wsdl:message name="ConsultaPorFolioWSResponse">
+    <wsdl:part element="liverpool:ConsultaPorFolioWSResponse" name="ConsultaPorFolioWSResponse"/>
+  </wsdl:message>
+  <wsdl:message name="EmisionRequestWS">
+    <wsdl:part element="liverpool:EmisionRequestWS" name="EmisionRequestWS"/>
+  </wsdl:message>
+  <wsdl:message name="EmisionWSResponse">
+    <wsdl:part element="liverpool:EmisionWSResponse" name="EmisionWSResponse"/>
+  </wsdl:message>
+  <wsdl:message name="EntregaMonederoRequestWS">
+    <wsdl:part element="liverpool:EntregaMonederoRequestWS" name="EntregaMonederoRequestWS"/>
+  </wsdl:message>
+  <wsdl:message name="EntregaMonederoWSResponse">
+    <wsdl:part element="liverpool:EntregaMonederoWSResponse" name="EntregaMonederoWSResponse"/>
+  </wsdl:message>
+  <wsdl:message name="FolioRequestWS">
+    <wsdl:part element="liverpool:FolioRequestWS" name="FolioRequestWS"/>
+  </wsdl:message>
+  <wsdl:message name="FolioWSResponse">
+    <wsdl:part element="liverpool:FolioWSResponse" name="FolioWSResponse"/>
+  </wsdl:message>
+  <wsdl:message name="TraspasosRequestWS">
+    <wsdl:part element="liverpool:TraspasosRequestWS" name="TraspasosRequestWS"/>
+  </wsdl:message>
+  <wsdl:message name="TraspasosWSResponse">
+    <wsdl:part element="liverpool:TraspasosWSResponse" name="TraspasosWSResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="FachadaVMonederos">
+    <wsdl:operation name="ConsultaMonederos">
+      <wsdl:input message="liverpool:ConsultaMonederosRequestWS" name="ConsultaMonederosRequestWS"/>
+      <wsdl:output message="liverpool:ConsultaMonederosWSResponse" name="ConsultaMonederosWSResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaPorFolio">
+      <wsdl:input message="liverpool:ConsultaPorFolioRequestWS" name="ConsultaPorFolioRequestWS"/>
+      <wsdl:output message="liverpool:ConsultaPorFolioWSResponse" name="ConsultaPorFolioWSResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="Emision">
+      <wsdl:input message="liverpool:EmisionRequestWS" name="EmisionRequestWS"/>
+      <wsdl:output message="liverpool:EmisionWSResponse" name="EmisionWSResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="EntregaMonedero">
+      <wsdl:input message="liverpool:EntregaMonederoRequestWS" name="EntregaMonederoRequestWS"/>
+      <wsdl:output message="liverpool:EntregaMonederoWSResponse" name="EntregaMonederoWSResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="Folio">
+      <wsdl:input message="liverpool:FolioRequestWS" name="FolioRequestWS"/>
+      <wsdl:output message="liverpool:FolioWSResponse" name="FolioWSResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="Traspasos">
+      <wsdl:input message="liverpool:TraspasosRequestWS" name="TraspasosRequestWS"/>
+      <wsdl:output message="liverpool:TraspasosWSResponse" name="TraspasosWSResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FachadaVMonederos" type="liverpool:FachadaVMonederos">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ConsultaMonederos">
+      <soap:operation soapAction="http://www.liverpool.com/FachadaVMonederos"/>
+      <wsdl:input name="ConsultaMonederosRequestWS">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaMonederosWSResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultaPorFolio">
+      <soap:operation soapAction="http://www.liverpool.com/FachadaVMonederos"/>
+      <wsdl:input name="ConsultaPorFolioRequestWS">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ConsultaPorFolioWSResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Emision">
+      <soap:operation soapAction="http://www.liverpool.com/FachadaVMonederos"/>
+      <wsdl:input name="EmisionRequestWS">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="EmisionWSResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EntregaMonedero">
+      <soap:operation soapAction="http://www.liverpool.com/FachadaVMonederos"/>
+      <wsdl:input name="EntregaMonederoRequestWS">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="EntregaMonederoWSResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Folio">
+      <soap:operation soapAction="http://www.liverpool.com/FachadaVMonederos"/>
+      <wsdl:input name="FolioRequestWS">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="FolioWSResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Traspasos">
+      <soap:operation soapAction="http://www.liverpool.com/FachadaVMonederos"/>
+      <wsdl:input name="TraspasosRequestWS">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="TraspasosWSResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FachadaVMonederos">
+    <wsdl:port binding="liverpool:FachadaVMonederos" name="FachadaVMonederosSOAP">
+      <soap:address location="http://172.16.204.104:7045/Fachada_VI"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\C:\Users\dsanchezm\Downloads\PRO_IIB10_VTA_MON_APP_12122019V2\VTA_MON_APP\FachadaVMonederos.xsd</con:url><con:content><![CDATA[<xsd:schema elementFormDefault="qualified" targetNamespace="http://www.liverpool.com/fachada_FachadaVMonederos" xmlns:tns="http://www.liverpool.com/fachada_FachadaVMonederos" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="EmisionRequestWS">
+    <xsd:sequence>
+      <xsd:element name="Encabezado" type="tns:EncabezadoType"/>
+      <xsd:element name="Linea" type="xsd:int"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="1" name="EmisionType" type="tns:EmisionType"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EmisionWSResponse">
+    <xsd:sequence>
+      <xsd:element name="Linea" type="xsd:int"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="1" name="EmisionType" type="tns:EmisionType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FolioRequestWS">
+    <xsd:sequence>
+      <xsd:element name="Encabezado" type="tns:EncabezadoType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="1" name="FolioType" type="tns:FolioType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FolioWSResponse">
+    <xsd:sequence>
+      <xsd:element name="Folio" type="xsd:int"/>
+      <xsd:element name="StatusFolio" type="xsd:int"/>
+      <xsd:element name="Respuesta" type="tns:RespuestaType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TraspasosRequestWS">
+    <xsd:sequence>
+      <xsd:element name="Encabezado" type="tns:EncabezadoType"/>
+      <xsd:element name="Linea" type="xsd:int"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="1" name="TraspasoType" type="tns:TraspasoType"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TraspasosWSResponse">
+    <xsd:sequence>
+      <xsd:element name="Respuesta" type="tns:RespuestaType"/>
+      <xsd:element name="Linea" type="xsd:int"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="1" name="TraspasoType" type="tns:TraspasoType"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ConsultaMonederosRequestWS">
+    <xsd:sequence>
+      <xsd:element name="ControlInicial" type="xsd:string"/>
+      <xsd:element name="ControlFinal" type="xsd:string"/>
+      <xsd:element name="Inicio" type="xsd:string"/>
+      <xsd:element name="Final" type="xsd:string"/>
+      <xsd:element name="Encabezado" type="tns:EncabezadoType"/>
+      <xsd:element name="Linea" type="xsd:int"/>
+      <xsd:element name="Sesion" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ConsultaMonederosWSResponse">
+    <xsd:sequence>
+      <xsd:element name="Paginas" type="xsd:string"/>
+      <xsd:element name="Pagina" type="xsd:string"/>
+      <xsd:element name="Sesion" type="xsd:string"/>
+      <xsd:element name="Linea" type="xsd:int"/>
+      <xsd:element name="Respuesta" type="tns:RespuestaType"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="1" name="ConsultaMonederosType" type="tns:ConsultaMonederosType"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ConsultaPorFolioWSResponse">
+    <xsd:sequence>
+      <xsd:element name="Fecha" type="xsd:string"/>
+      <xsd:element name="Hora" type="xsd:string"/>
+      <xsd:element name="Usuario" type="xsd:string"/>
+      <xsd:element name="Control" type="xsd:string"/>
+      <xsd:element name="Fecha_Bol" type="xsd:date"/>
+      <xsd:element name="Hora_Bol" type="xsd:time"/>
+      <xsd:element name="Importe" type="xsd:float"/>
+      <xsd:element name="Estado" type="xsd:string"/>
+      <xsd:element name="Respuesta" type="tns:RespuestaType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ConsultaPorFolioRequestWS">
+    <xsd:sequence>
+      <xsd:element name="Folio" type="xsd:int"/>
+      <xsd:element name="Encabezado" type="tns:EncabezadoType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EntregaMonederoRequestWS">
+    <xsd:sequence>
+      <xsd:element name="Folio" type="xsd:string"/>
+      <xsd:element name="Control" type="xsd:string"/>
+      <xsd:element name="Encabezado" type="tns:EncabezadoType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EntregaMonederoWSResponse">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="1" name="Respuesta" type="tns:RespuestaType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="ConsultaMonederosRequestWS" type="tns:ConsultaMonederosRequestWS"></xsd:element>
+  <xsd:element name="ConsultaMonederosWSResponse" type="tns:ConsultaMonederosWSResponse"></xsd:element>
+  <xsd:element name="ConsultaPorFolioRequestWS" type="tns:ConsultaPorFolioRequestWS"></xsd:element>
+  <xsd:element name="ConsultaPorFolioWSResponse" type="tns:ConsultaPorFolioWSResponse"></xsd:element>
+  <xsd:element name="EmisionRequestWS" type="tns:EmisionRequestWS"/>
+  <xsd:element name="EmisionWSResponse" type="tns:EmisionWSResponse"/>
+  <xsd:element name="EntregaMonederoRequestWS" type="tns:EntregaMonederoRequestWS"></xsd:element>
+  <xsd:element name="EntregaMonederoWSResponse" type="tns:EntregaMonederoWSResponse"></xsd:element>
+  <xsd:element name="FolioRequestWS" type="tns:FolioRequestWS"/>
+  <xsd:element name="FolioWSResponse" type="tns:FolioWSResponse"/>
+  <xsd:element name="TraspasosRequestWS" type="tns:TraspasosRequestWS"/>
+  <xsd:element name="TraspasosWSResponse" type="tns:TraspasosWSResponse"></xsd:element>
+  <xsd:complexType name="EncabezadoType">
+    <xsd:sequence>
+      <xsd:element name="Transaccion" type="xsd:string"/>
+      <xsd:element name="Convenio" type="xsd:string"/>
+      <xsd:element name="Paginas" type="xsd:string"/>
+      <xsd:element name="Pagina" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="RespuestaType">
+    <xsd:sequence>
+      <xsd:element name="Codigo" type="xsd:int"/>
+      <xsd:element name="Descripcion" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TraspasoType">
+    <xsd:sequence>
+      <xsd:element name="Control" type="xsd:string"/>
+      <xsd:element name="Monto" type="xsd:string"/>
+      <xsd:element name="Nuevo" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="Respuesta" type="tns:RespuestaType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EmisionType">
+    <xsd:sequence>
+      <xsd:element name="Control" type="xsd:string"/>
+      <xsd:element name="Importe" type="xsd:string"/>
+      <xsd:element name="Rango" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="Respuesta" type="tns:RespuestaType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FolioType">
+    <xsd:sequence>
+      <xsd:element name="Control" type="xsd:string"/>
+      <xsd:element name="Importe" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ConsultaMonederosType">
+    <xsd:sequence>
+      <xsd:element name="Fecha" type="xsd:string"/>
+      <xsd:element name="Hora" type="xsd:string"/>
+      <xsd:element name="Control" type="xsd:string"/>
+      <xsd:element name="Emision" type="xsd:float"/>
+      <xsd:element name="Redencion" type="xsd:float"/>
+      <xsd:element name="Saldo" type="xsd:float"/>
+      <xsd:element name="Estado" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ArchivoType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Archivo" type="xsd:hexBinary"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\dsanchezm\Downloads\PRO_IIB10_VTA_MON_APP_12122019V2\VTA_MON_APP\FachadaVMonederos_InlineSchema1.xsd</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://www.liverpool.com/FachadaVMonederos" xmlns:env="http://www.liverpool.com/fachada_FachadaVMonederos" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:liverpool="http://www.liverpool.com/FachadaVMonederos" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import namespace="http://www.liverpool.com/fachada_FachadaVMonederos" schemaLocation="FachadaVMonederos.xsd"/>
+  <xsd:element ibmSchExtn:docRoot="true" name="ConsultaMonederosRequestWS">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" ref="env:ConsultaMonederosRequestWS"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="ConsultaMonederosWSResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" ref="env:ConsultaMonederosWSResponse"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="ConsultaPorFolioRequestWS">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" ref="env:ConsultaPorFolioRequestWS"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="ConsultaPorFolioWSResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" ref="env:ConsultaPorFolioWSResponse"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="EmisionRequestWS">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" ref="env:EmisionRequestWS"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="EmisionWSResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" ref="env:EmisionWSResponse"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="EntregaMonederoRequestWS">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" ref="env:EntregaMonederoRequestWS"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="EntregaMonederoWSResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" ref="env:EntregaMonederoWSResponse"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="FolioRequestWS">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" ref="env:FolioRequestWS"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="FolioWSResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" ref="env:FolioWSResponse"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="TraspasosRequestWS">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" ref="env:TraspasosRequestWS"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="TraspasosWSResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="1" minOccurs="1" ref="env:TraspasosWSResponse"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://172.16.204.104:7045/Fachada_VI</con:endpoint></con:endpoints><con:operation id="7759911e-ff59-4407-a221-f382c57eb60a" isOneWay="false" action="http://www.liverpool.com/FachadaVMonederos" name="ConsultaMonederos" bindingOperationName="ConsultaMonederos" type="Request-Response" outputName="ConsultaMonederosWSResponse" inputName="ConsultaMonederosRequestWS" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9fe5cf2a-7157-48a4-9884-2975e83570dc" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://172.17.203.127:7045/Fachada_VI</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fac="http://www.liverpool.com/FachadaVMonederos" xmlns:fac1="http://www.liverpool.com/fachada_FachadaVMonederos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <fac:ConsultaMonederosRequestWS>\r
+         <fac1:ConsultaMonederosRequestWS>\r
+            <fac1:ControlInicial>?</fac1:ControlInicial>\r
+            <fac1:ControlFinal>?</fac1:ControlFinal>\r
+            <fac1:Inicio>?</fac1:Inicio>\r
+            <fac1:Final>?</fac1:Final>\r
+            <fac1:Encabezado>\r
+               <fac1:Transaccion>?</fac1:Transaccion>\r
+               <fac1:Convenio>?</fac1:Convenio>\r
+               <fac1:Paginas>?</fac1:Paginas>\r
+               <fac1:Pagina>?</fac1:Pagina>\r
+            </fac1:Encabezado>\r
+            <fac1:Linea>?</fac1:Linea>\r
+            <fac1:Sesion>?</fac1:Sesion>\r
+         </fac1:ConsultaMonederosRequestWS>\r
+      </fac:ConsultaMonederosRequestWS>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.liverpool.com/FachadaVMonederos"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="47d1d2a6-b85e-463b-a0a9-77f2805aa3aa" isOneWay="false" action="http://www.liverpool.com/FachadaVMonederos" name="ConsultaPorFolio" bindingOperationName="ConsultaPorFolio" type="Request-Response" outputName="ConsultaPorFolioWSResponse" inputName="ConsultaPorFolioRequestWS" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8164e903-a7a8-4f13-86c4-3b60ba192e54" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.16.204.104:7045/Fachada_VI</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fac="http://www.liverpool.com/FachadaVMonederos" xmlns:fac1="http://www.liverpool.com/fachada_FachadaVMonederos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <fac:ConsultaPorFolioRequestWS>\r
+         <fac1:ConsultaPorFolioRequestWS>\r
+            <fac1:Folio>?</fac1:Folio>\r
+            <fac1:Encabezado>\r
+               <fac1:Transaccion>?</fac1:Transaccion>\r
+               <fac1:Convenio>?</fac1:Convenio>\r
+               <fac1:Paginas>?</fac1:Paginas>\r
+               <fac1:Pagina>?</fac1:Pagina>\r
+            </fac1:Encabezado>\r
+         </fac1:ConsultaPorFolioRequestWS>\r
+      </fac:ConsultaPorFolioRequestWS>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.liverpool.com/FachadaVMonederos"/></con:call></con:operation><con:operation id="2766cbfd-b8f1-488e-8df0-9683ff5d8580" isOneWay="false" action="http://www.liverpool.com/FachadaVMonederos" name="Emision" bindingOperationName="Emision" type="Request-Response" outputName="EmisionWSResponse" inputName="EmisionRequestWS" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="12938362-474e-47fa-85bb-59ba8c76dfda" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.16.204.104:7045/Fachada_VI</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fac="http://www.liverpool.com/FachadaVMonederos" xmlns:fac1="http://www.liverpool.com/fachada_FachadaVMonederos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <fac:EmisionRequestWS>\r
+         <fac1:EmisionRequestWS>\r
+            <fac1:Encabezado>\r
+               <fac1:Transaccion>?</fac1:Transaccion>\r
+               <fac1:Convenio>?</fac1:Convenio>\r
+               <fac1:Paginas>?</fac1:Paginas>\r
+               <fac1:Pagina>?</fac1:Pagina>\r
+            </fac1:Encabezado>\r
+            <fac1:Linea>?</fac1:Linea>\r
+            <!--1 or more repetitions:-->\r
+            <fac1:EmisionType>\r
+               <fac1:Control>?</fac1:Control>\r
+               <fac1:Importe>?</fac1:Importe>\r
+               <fac1:Rango>?</fac1:Rango>\r
+               <!--Optional:-->\r
+               <fac1:Respuesta>\r
+                  <fac1:Codigo>?</fac1:Codigo>\r
+                  <fac1:Descripcion>?</fac1:Descripcion>\r
+               </fac1:Respuesta>\r
+            </fac1:EmisionType>\r
+         </fac1:EmisionRequestWS>\r
+      </fac:EmisionRequestWS>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.liverpool.com/FachadaVMonederos"/></con:call></con:operation><con:operation id="fe0117d3-44f8-4bf8-998a-82166fb83c16" isOneWay="false" action="http://www.liverpool.com/FachadaVMonederos" name="EntregaMonedero" bindingOperationName="EntregaMonedero" type="Request-Response" outputName="EntregaMonederoWSResponse" inputName="EntregaMonederoRequestWS" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="78d54ab3-73f6-4a8c-b1ad-81f3167b9433" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.16.204.104:7045/Fachada_VI</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fac="http://www.liverpool.com/FachadaVMonederos" xmlns:fac1="http://www.liverpool.com/fachada_FachadaVMonederos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <fac:EntregaMonederoRequestWS>\r
+         <fac1:EntregaMonederoRequestWS>\r
+            <fac1:Folio>?</fac1:Folio>\r
+            <fac1:Control>?</fac1:Control>\r
+            <fac1:Encabezado>\r
+               <fac1:Transaccion>?</fac1:Transaccion>\r
+               <fac1:Convenio>?</fac1:Convenio>\r
+               <fac1:Paginas>?</fac1:Paginas>\r
+               <fac1:Pagina>?</fac1:Pagina>\r
+            </fac1:Encabezado>\r
+         </fac1:EntregaMonederoRequestWS>\r
+      </fac:EntregaMonederoRequestWS>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.liverpool.com/FachadaVMonederos"/></con:call></con:operation><con:operation id="46f5698d-5060-40a8-a9dc-8ea91acf6dd6" isOneWay="false" action="http://www.liverpool.com/FachadaVMonederos" name="Folio" bindingOperationName="Folio" type="Request-Response" outputName="FolioWSResponse" inputName="FolioRequestWS" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="562c60df-f80c-45cb-96dd-4fadb61cacee" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.16.204.104:7045/Fachada_VI</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fac="http://www.liverpool.com/FachadaVMonederos" xmlns:fac1="http://www.liverpool.com/fachada_FachadaVMonederos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <fac:FolioRequestWS>\r
+         <fac1:FolioRequestWS>\r
+            <fac1:Encabezado>\r
+               <fac1:Transaccion>?</fac1:Transaccion>\r
+               <fac1:Convenio>?</fac1:Convenio>\r
+               <fac1:Paginas>?</fac1:Paginas>\r
+               <fac1:Pagina>?</fac1:Pagina>\r
+            </fac1:Encabezado>\r
+            <!--1 or more repetitions:-->\r
+            <fac1:FolioType>\r
+               <fac1:Control>?</fac1:Control>\r
+               <fac1:Importe>?</fac1:Importe>\r
+            </fac1:FolioType>\r
+         </fac1:FolioRequestWS>\r
+      </fac:FolioRequestWS>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.liverpool.com/FachadaVMonederos"/></con:call></con:operation><con:operation id="9f726ce7-88c6-46fc-8ece-df02e1ed4b33" isOneWay="false" action="http://www.liverpool.com/FachadaVMonederos" name="Traspasos" bindingOperationName="Traspasos" type="Request-Response" outputName="TraspasosWSResponse" inputName="TraspasosRequestWS" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="afd7c3f7-2cfd-4fbc-b11d-0eb99ac11491" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://172.16.204.104:7045/Fachada_VI</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fac="http://www.liverpool.com/FachadaVMonederos" xmlns:fac1="http://www.liverpool.com/fachada_FachadaVMonederos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <fac:TraspasosRequestWS>\r
+         <fac1:TraspasosRequestWS>\r
+            <fac1:Encabezado>\r
+               <fac1:Transaccion>?</fac1:Transaccion>\r
+               <fac1:Convenio>?</fac1:Convenio>\r
+               <fac1:Paginas>?</fac1:Paginas>\r
+               <fac1:Pagina>?</fac1:Pagina>\r
+            </fac1:Encabezado>\r
+            <fac1:Linea>?</fac1:Linea>\r
+            <!--1 or more repetitions:-->\r
+            <fac1:TraspasoType>\r
+               <fac1:Control>?</fac1:Control>\r
+               <fac1:Monto>?</fac1:Monto>\r
+               <fac1:Nuevo>?</fac1:Nuevo>\r
+               <!--Optional:-->\r
+               <fac1:Respuesta>\r
+                  <fac1:Codigo>?</fac1:Codigo>\r
+                  <fac1:Descripcion>?</fac1:Descripcion>\r
+               </fac1:Respuesta>\r
+            </fac1:TraspasoType>\r
+         </fac1:TraspasosRequestWS>\r
+      </fac:TraspasosRequestWS>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.liverpool.com/FachadaVMonederos"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
